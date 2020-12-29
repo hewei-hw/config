@@ -24,9 +24,6 @@ spring:
   cloud:
     config:
       override-none: true
-
-server:
-  port: 8101
   
 eureka:
   client:
@@ -39,14 +36,14 @@ management:
       exposure:
         include: refresh
 
-#---
-#spring:
-#  profiles: user1
+---
+spring:
+  profiles: user1
   
-#server:
- # port: 8101     
-#---
-#spring:
-  #profiles: user2
-#server:
- # port: 8102#
+server:
+  port: 8101     
+---
+spring:
+  profiles: user2
+server:
+  port: 8102
