@@ -6,9 +6,7 @@ sp:
 #  application:
 #    name: user-service
 #    
-server:
-  port: 8101
-#  
+
 #eureka:
 #  client:
 #    service-url:
@@ -19,15 +17,16 @@ spring:
     name: user-service
     
   rabbitmq:
-    host: 192.168.64.140
+    host: 192.168.142.135
     port: 5672
     username: admin
     password: admin
   cloud:
     config:
       override-none: true
-#server:
-#  port: 8101
+
+server:
+  port: 8101
   
 eureka:
   client:
